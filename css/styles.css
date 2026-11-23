@@ -1,12 +1,12 @@
 :root {
   color-scheme: light;
-  --background: #f3f1fa;
-  --surface: #ffffff;
-  --ink: #242436;
-  --muted: #66677b;
-  --accent: #a99cf4;
-  --accent-hover: #069b0d;
-  --border: #2b2a40;
+  --background: #ffe600;
+  --surface: #64e8ff;
+  --ink: #111111;
+  --muted: #5a20ff;
+  --accent: #ff4fca;
+  --accent-hover: #55ff47;
+  --border: #111111;
   --shadow: 7px 7px 0 var(--border);
 }
 
@@ -51,7 +51,7 @@ body {
   width: 72px;
   height: 72px;
   margin: 28px auto 12px;
-  background: #e2f3df;
+  background: #ff6b00;
   border: 2px solid var(--border);
   border-radius: 18px;
   font-size: 2rem;
