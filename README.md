@@ -1,6 +1,7 @@
 # Hello World — repositorio de pruebas
 
 Página estática con HTML y CSS para probar un flujo de trabajo con VS Code, Git y commits asistidos por IA.
+Incluye un botón para alternar entre el tema original y uno alternativo.
 
 ## Uso
 

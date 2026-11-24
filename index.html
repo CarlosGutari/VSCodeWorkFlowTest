@@ -22,10 +22,27 @@
           <li>Repositorio preparado para Git</li>
         </ul>
       </section>
-      <a class="button" href="https://github.com/" target="_blank" rel="noopener noreferrer">Abrir GitHub <span aria-hidden="true">↗</span></a>
+      <div class="actions">
+        <a class="button" href="https://github.com/" target="_blank" rel="noopener noreferrer">Abrir GitHub <span aria-hidden="true">↗</span></a>
+        <button class="button theme-button" type="button" aria-pressed="false">Cambiar tema</button>
+      </div>
+      <p class="theme-status" aria-live="polite"></p>
       <p class="hint">Esta versión contiene nuevos elementos para comprobar el flujo de cambios.</p>
     </article>
-    <footer>Hecho con HTML y CSS · Sin dependencias</footer>
+    <footer>Hechoggg con HTML y CSS · Sin dependencias</footer>
   </main>
+  <script>
+    const themeButton = document.querySelector(".theme-button");
+    const themeStatus = document.querySelector(".theme-status");
+
+    themeButton.addEventListener("click", () => {
+      const isAlternateTheme = document.body.classList.toggle("alternate-theme");
+      themeButton.setAttribute("aria-pressed", String(isAlternateTheme));
+      themeButton.textContent = isAlternateTheme ? "Volver al tema original" : "Cambiar tema";
+      themeStatus.textContent = isAlternateTheme
+        ? "Tema alternativo activado."
+        : "Tema original restaurado.";
+    });
+  </script>
 </body>
 </html>
